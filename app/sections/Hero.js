@@ -39,7 +39,7 @@ const Hero = () => {
 
         <a
           href="/"
-          className="font-lamaBold flexStart gap-3 bg-rise-600 hover:bg-rise-500 px-10 py-2 rounded-xl shadow hover:shadow-xl duration-200 hover:duration-200 text-umbra-700">
+          className="font-lamaBold flexCenter gap-3 bg-rise-600 hover:bg-rise-500 px-10 py-2 rounded-xl shadow hover:shadow-xl duration-200 hover:duration-200 text-umbra-700">
           <span className="p4 pt-[1px]">احجز الآن</span>
           <div className=" p-[2px] bg-white rounded-full">
             <MdKeyboardArrowLeft className=" text-xl pr-[1px]" />

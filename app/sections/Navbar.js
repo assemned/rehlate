@@ -2,7 +2,7 @@ import { AiFillYoutube } from "react-icons/ai";
 
 const Navbar = () => {
   return (
-    <nav className="absolute w-full p-x py-10 z-10 text-white">
+    <nav className="absolute w-full p-x py-10 z-10 max-sm:py-6 text-white">
       <div className=" w-full h-full flexBetween">
         <a href="/" className=" font-lamaBold h4">
           رحلاتي<span className=" text-rise-600">.</span>

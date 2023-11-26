@@ -17,7 +17,7 @@ const Services = () => {
         </div>
 
         <div
-          className="flex justify-around items-center relative bg-candy-100 rounded-3xl py-16 px-20 max-md:flex-wrap max-lg:px-14"
+          className="flex justify-around items-center relative bg-candy-100 rounded-3xl py-10 px-20 max-md:flex-wrap max-lg:px-14"
           ref={scrollRef}>
           {SERVICES.map((service, index) => (
             <motion.div

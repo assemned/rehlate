@@ -2,26 +2,191 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import "./assets/fonts.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "LamaMedium,sans-serif";
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  list-style: none;
+}
+
+@layer utilities {
+  .max-cp {
+    @apply m-auto max-w-[1500px] px-5 md:px-8 lg:px-10 2xl:px-14 pt-2 lg:pt-4 2xl:pt-6 pb-24;
+  }
+
+  .max-c {
+    @apply m-auto max-w-[1500px];
+  }
+
+  .p-x {
+    @apply px-5 md:px-8 lg:px-10 2xl:px-14;
+  }
+
+  .p-r {
+    @apply pr-5 md:pr-8 lg:pr-10 2xl:pr-14;
+  }
+
+  .p-l {
+    @apply pl-5 md:pl-8 lg:pl-10 2xl:pl-14;
+  }
+
+  .p-y {
+    @apply py-12 lg:py-16 2xl:py-24;
+  }
+
+  .p-t {
+    @apply pt-12 lg:pt-16 2xl:pt-24;
+  }
+
+  .p-b {
+    @apply pb-12 lg:pb-16 2xl:pb-24;
+  }
+
+  .h1 {
+    @apply text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl;
+  }
+
+  .h2 {
+    @apply text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl;
+  }
+
+  .h3 {
+    @apply text-lg sm:text-xl lg:text-2xl 2xl:text-3xl;
+  }
+
+  .h4 {
+    @apply text-base sm:text-lg lg:text-xl 2xl:text-2xl;
+  }
+
+  .h5 {
+    @apply text-base sm:text-sm md:text-lg xl:text-xl;
+  }
+
+  .p1 {
+    @apply text-base md:text-lg;
+  }
+
+  .p2 {
+    @apply text-sm md:text-base 2xl:text-lg;
+  }
+
+  .p3 {
+    @apply text-sm xl:text-base;
+  }
+
+  .p4 {
+    @apply text-xs xl:text-sm;
+  }
+
+  .flexCenter {
+    @apply flex justify-center items-center;
+  }
+
+  .flexBetween {
+    @apply flex justify-between items-center;
+  }
+
+  .flexStart {
+    @apply flex justify-start items-start;
+  }
+
+  .flexEnd {
+    @apply flex justify-end items-end;
+  }
+
+  .flexRowCol {
+    @apply flex flex-col md:flex-row;
+  }
+
+  .flexCol {
+    @apply flex flex-col;
+  }
+
+  .flexRow {
+    @apply flex flex-row;
+  }
+
+  .flexCenterCol {
+    @apply flex justify-center items-center flex-col;
+  }
+
+  .flexStartCol {
+    @apply flex justify-center items-start flex-col;
+  }
+
+  .head {
+    @apply text-umbra-700 h2 font-lamaExtrabold mb-14 max-sm:mb-8;
+  }
+
+  .subhead {
+    @apply text-umbra-300 h4 font-lamaBold;
+  }
+
+  .splide__arrow {
+    @apply bg-candy-600 opacity-100 p1 text-white stroke-2 stroke-white shadow-xl !important;
+  }
+
+  .splide__arrow svg {
+    @apply fill-white !important;
+  }
+
+  .splide__arrow--next {
+    @apply ps-1 max-sm:pe-1 !important;
+  }
+
+  .splide__arrow--prev {
+    @apply pe-[2px] max-sm:ps-1 !important;
+  }
+
+  .label {
+    @apply font-lamaExtrabold h4;
+  }
+
+  .input {
+    @apply font-lamaNormal p3 p-4 w-full border-2 border-black rounded-2xl focus:outline-none;
+  }
+
+  .navHover {
+    @apply after:block after:w-full after:h-[1px] after:scale-x-0 hover:after:scale-x-100 origin-center after:bg-white transition after:duration-200 duration-200 hover:duration-200 hover:after:duration-200;
+  }
+}
+
+.shadowBox {
+  box-shadow: 10px 10px 0px 0px #000000;
+}
+
+/* Animation */
+
+@keyframes circle {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.circleAnimation {
+  animation: circle 1700ms ease infinite;
 }

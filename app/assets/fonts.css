@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "LamaNormal";
+  src: url("/fonts/LamaSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LamaNormalRegular";
+  src: url("/fonts/LamaSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LamaExtraBold";
+  src: url("/fonts/LamaSans-ExtraBoldExpanded.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LamaBold";
+  src: url("/fonts/LamaSans-BoldExpanded.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LamaSemiBold";
+  src: url("/fonts/LamaSans-SemiBoldExpanded.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LamaMedium";
+  src: url("/fonts/LamaSans-MediumExpanded.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LamaRegular";
+  src: url("/fonts/LamaSans-RegularExpanded.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LamaLight";
+  src: url("/fonts/LamaSans-LightExpanded.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}

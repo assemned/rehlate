@@ -40,11 +40,12 @@ const Reviews = () => {
             {REVIEWS.map((review, index) => (
               <SplideSlide
                 key={index}
-                className=" bg-candy-100 py-10 px-8 max-md:px-4 rounded-3xl flexStartCol gap-5">
+                className=" bg-candy-100 py-10 px-8 max-md:px-4 rounded-3xl">
                 <motion.div
                   initial={{ opacity: 0, translateY: 0 }}
                   animate={inView && { opacity: 1, translateY: 0 }}
-                  transition={{ duration: 1, delay: 0.5 + index / 3 }}>
+                  transition={{ duration: 1, delay: 0.5 + index / 3 }}
+                  className=" flexStartCol gap-5">
                   <div className="h4 flexStart text-rise-600 max-lg:h3 max-md:h2">
                     <MdStar />
                     <MdStar />

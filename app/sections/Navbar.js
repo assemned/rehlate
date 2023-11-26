@@ -28,7 +28,7 @@ const Navbar = () => {
 
         <a
           href="/"
-          className=" font-lamaMedium p1 flexEnd gap-1 hover:scale-110 duration-200">
+          className=" font-lamaMedium p1 flexCenter gap-1 hover:scale-110 duration-200">
           <p>يوتيوب </p>
           <AiFillYoutube className="h4 max-sm:h3" />
         </a>
